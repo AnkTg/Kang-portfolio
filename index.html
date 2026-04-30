@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강태구 | Backend Developer Portfolio</title>
+    <meta
+      name="description"
+      content="고객 관점에서 문제를 해결하는 백엔드 개발자 강태구 포트폴리오"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="logo" href="#top">KangTaegu.dev</a>
+        <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">메뉴</button>
+        <nav class="nav-links" id="navLinks" aria-label="섹션 내비게이션">
+          <a href="#about">소개</a>
+          <a href="#education">학력/활동</a>
+          <a href="#work-history">경력사항</a>
+          <a href="#experience">경력 요약</a>
+          <a href="#skills">기술 스택</a>
+          <a href="#projects">프로젝트</a>
+          <a href="#project-experience">프로젝트 경험</a>
+          <a href="#interest-direction">관심 기술</a>
+          <a href="#contact">연락처</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="hero-role">Backend Developer</p>
+          <h1>고객 관점에서 문제를 해결하는<br />백엔드 개발자 강태구입니다.</h1>
+          <p class="hero-desc">
+            유지보수성과 확장성을 갖춘 API/데이터 구조를 설계하고, 운영 환경에서
+            실제 성능 개선으로 연결합니다.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-ghost" href="#projects">성과 보기</a>
+          </div>
+          <div class="hero-badges">
+            <span>경력 3년 8개월</span>
+            <span>RESTful API 전체 구현</span>
+            <span>실시간 처리(WebSocket) 구현</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container card">
+          <h2>소개</h2>
+          <p>
+            고객 지향적 개발을 중심에 두고, 읽기 쉽고 변경에 강한 구조를 지향합니다.
+            기능 구현에 그치지 않고 품질 기준, 문서화, 운영 안정성까지 함께 고려해
+            서비스 완성도를 높입니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <h2>학력 및 활동</h2>
+          <div class="info-grid">
+            <article class="card info-card">
+              <p class="period">2019.03 - 2023.02</p>
+              <h3>연성대학교 컴퓨터소프트웨어</h3>
+              <p>졸업</p>
+              <p>
+                안양 사이버 과학축제에서 스크래치 코딩 체험 부스를 기획·운영하며
+                교육형 콘텐츠 진행 경험을 쌓았습니다.
+              </p>
+            </article>
+            <article class="card info-card">
+              <p class="period">2016.03 - 2019.02</p>
+              <h3>장곡고등학교 인문계열</h3>
+              <p>졸업</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work-history" class="section">
+        <div class="container card">
+          <h2>경력사항</h2>
+		   <h3>VoIP 기반 콜센터 서비스 개발</h3>
+		   <p>
+			C# 기반 백엔드, WinForm/WPF, .NET, RESTful API, WebSocket, TCP/IP,
+			Windows Server 구축·운영, 프로젝트 PM, Spring Boot 풀스택 개발
+		   </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container card">
+          <h2>경력 요약</h2>
+          <ul class="career-list">
+            <li>
+              지난 3년 8개월간 콜센터 기반 시스템을 개발하며 C#(.NET)과 Spring Boot
+              환경에서 백엔드 및 웹 서비스를 설계·구현했습니다. 로그인, 통계, 전화
+              발신/수신 기능을 RESTful API 중심으로 재구성하고 실시간 모니터링 기능에
+              WebSocket을 적용했습니다.
+            </li>
+            <li>
+              MariaDB, MySQL, Oracle Database, Microsoft SQL Server 환경에서 데이터
+              모델링 및 SQL 개발을 수행했습니다. 통계 처리 구간의 복잡한 Join Query와
+              Index를 최적화해 조회 성능을 개선했습니다.
+            </li>
+            <li>
+              Model Context Protocol 기반 인터페이스와 Claude를 활용해 사내 DB 접근성을
+              개선했습니다. 스키마 정보를 기반으로 자연어 질의를 SQL로 변환하고 허용
+              Query 패턴/검증 로직을 적용해 비개발 인력도 안전하게 데이터를 조회할 수
+              있도록 지원했습니다.
+            </li>
+            <li>
+              코드 리팩토링을 습관화해 병목 구간과 비효율 로직을 개선하고, 우수 기능을
+              모듈화하여 신규 서비스에 적용함으로써 재사용성과 유지보수성을
+              향상시켰습니다.
+            </li>
+            <li>
+              예외 구간별 로그 체계를 설계하고 실행 시간 기반 분석 로그를 운영해 장애
+              및 지연 이슈 발생 시 원인을 빠르게 식별하고 개선했습니다.
+            </li>
+            <li>
+              Git(Fork) 기반 형상관리를 통해 이력과 배포 버전을 체계적으로 관리했고,
+              수동 배포 환경에서도 체크리스트 기반 배포 절차를 정리·개선해 운영
+              안정성을 유지했습니다.
+            </li>
+            <li>
+              PM과 개발을 겸한 End-to-End 오너십으로 사용자 리뷰 단계의 다수 수정 요청을
+              기술 영향도 및 우선순위 기준으로 재정의하고 이해관계자와 합의를 도출해
+              전체 요청의 약 70%를 선별 반영했습니다. 그 결과 일정 지연 없이(0일)
+              프로젝트를 오픈했습니다.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>기술 스택</h2>
+          <div class="skill-grid">
+            <article class="card">
+              <h3>Backend</h3>
+              <ul>
+                <li>C# 기반 서비스 개발 (중급)</li>
+                <li>RESTful API 설계 및 성능 최적화</li>
+                <li>WebSocket 기반 실시간 데이터 처리</li>
+                <li>TCP/IP 통신 구조 설계 및 장애 대응</li>
+                <li>Spring 기반 REST API/관리자 웹 설계·개발</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Database</h3>
+              <ul>
+                <li>MariaDB, MySQL, MSSQL (중급)</li>
+                <li>대규모 트랜잭션 환경 쿼리 최적화</li>
+                <li>DB 부하 분석 및 성능 개선</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>JavaScript, HTML5, CSS (초급)</li>
+              </ul>
+              <h3 class="minor-title">Others</h3>
+              <ul>
+                <li>Python, Oracle (기초 경험)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>핵심 프로젝트</h2>
+          <div class="project-grid">
+            <article class="card project-card">
+              <p class="tag">품질 인증</p>
+              <h3>국가기관 TTA GS 인증 단독 수행</h3>
+              <ul class="psr-list">
+                <li><strong>문제</strong> 인증 기준 해석, 산출물 정합성, 검증 대응이 분산되어 일정·품질 리스크가 있었습니다.</li>
+                <li><strong>해결</strong> 인증 기준 분석부터 대응 전략, 산출물 작성, 사전 검증까지 단일 오너십으로 프로세스를 통합했습니다.</li>
+                <li><strong>성과</strong> 인증 총 기간 3개월 안에 개발, 테스트, 문서 산출을 모두 완료했으며, WBS/SDK/인터페이스 명세서/화면정의서/사용자·관리자 설명서를 완성했습니다.</li>
+              </ul>
+            </article>
+            <article class="card project-card">
+              <p class="tag">성능 개선</p>
+              <h3>금융권 ACS DB 부하 절감</h3>
+              <ul class="psr-list">
+                <li><strong>문제</strong> 대규모 트랜잭션 환경에서 DB Query 부하 급증이 예상되었습니다.</li>
+                <li><strong>해결</strong> 불필요한 Join 제거를 위한 테이블 구조 개선과 서버 메모리 캐싱 전략을 적용했습니다.</li>
+                <li><strong>성과</strong> 일 60만 건 수준의 DB Query 부하를 약 70~75% 절감했습니다.</li>
+              </ul>
+            </article>
+            <article class="card project-card">
+              <p class="tag">데이터 접근성</p>
+              <h3>MCP + Claude 기반 SQL 변환 인터페이스</h3>
+              <ul class="psr-list">
+                <li><strong>문제</strong> 비개발 인력의 DB 조회 수요는 높았지만 SQL 작성 난도로 인해 데이터 확인과 고객 대응이 지연됐습니다.</li>
+                <li><strong>해결</strong> MCP 기반 스키마 추상화, 자연어-SQL 변환, 허용 Query 패턴 제한, SQL 검증 로직을 구현했습니다.</li>
+                <li><strong>성과</strong> 유지보수 부서 2명이 자주 요청하던 쿼리를 사내 출결/성과 등록 사이트에서 직접 조회할 수 있게 연동해, 개발자 쿼리 요청 문의를 사실상 0건으로 줄였습니다.</li>
+              </ul>
+            </article>
+            <article class="card project-card">
+              <p class="tag">아키텍처</p>
+              <h3>Spring Boot 기반 API 중심 서비스 재구성</h3>
+              <ul class="psr-list">
+                <li><strong>문제</strong> 기능별 구현 방식이 혼재되어 화면-백엔드-EAI 연동 일관성과 확장성이 떨어졌습니다.</li>
+                <li><strong>해결</strong> 풀스택 웹페이지와 RESTful API 전 영역을 직접 설계·개발하고, 인터페이스 명세서와 SDK를 작성해 외부 협업 업체에 제공했습니다.</li>
+                <li><strong>성과</strong> 연동 기준 표준화로 협업 업체의 초기 연동 기간을 평균 2~3개월에서 1개월 이내로 단축했고, 화면-백엔드 간 변경 대응 속도도 향상했습니다.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="project-experience" class="section">
+        <div class="container card">
+          <h2>프로젝트 경험</h2>
+          <h3>Whisper 기반 STT를 ARS 시스템에 적용한 사내 프로젝트</h3>
+          <p>
+            음성 데이터를 텍스트로 변환해 상담 품질 분석과 키워드 기반 활용을 목표로
+            진행한 프로젝트입니다. 초기에는 실시간 음성 처리 구조와 데이터 활용 체계가
+            부족해 운영 가능한 형태로 연결하기 어려운 상황이었습니다.
+          </p>
+          <p>
+            이를 해결하기 위해 Media Server의 Rx/Tx 음성 스트림을 분리 검출하고 STT
+            엔진으로 전달하는 실시간 파이프라인을 설계·구현했습니다. 또한 약 1,000건의
+            녹취 파일을 대상으로 STT 처리 자동화를 구축하고, 키워드 검출 결과를
+            정렬·분석해 실제 활용 가능한 키워드를 선별했습니다.
+          </p>
+          <p>
+            결과적으로 상용화까지 이어지지는 않았지만, 실시간 음성 처리 아키텍처 설계와
+            데이터 기반 기능 개선 전반을 경험하며 음성·데이터 파이프라인에 대한 실무
+            역량을 강화했습니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="interest-direction" class="section">
+        <div class="container card">
+          <h2>관심 기술과 공부 방향</h2>
+          <p>
+            최근에는 Claude 기반의 Claude Code와 Cursor를 활용한 개발 방식에 관심을
+            두고, 개발 생산성을 높이는 실전 적용 방법을 지속적으로 탐색하고 있습니다.
+            단순 코드 보조를 넘어 이른바 바이브 코딩 방식으로 기능을 빠르게 구현하고
+            검증하는 흐름을 업무에 적용하고 있습니다.
+          </p>
+          <p>
+            또한 AI Agent 구조와 Model Context Protocol 기반 연동 방식에 관심을 가지고
+            Python 학습과 함께 관련 기능을 직접 구현했습니다. Cursor를 활용해 Gmail과
+            연동되는 AI Agent를 개발하고, 고객사 회의 일정 및 요구사항을 자동 정리해
+            Google 스프레드시트에 기록하는 기능을 구현했습니다.
+          </p>
+          <p>
+            이를 통해 단순 기능 개발을 넘어 반복 업무를 자동화하고 데이터 흐름을
+            개선하는 방향의 가능성을 확인했으며, 앞으로도 AI 기반 시스템 설계 및 활용
+            역량을 지속적으로 강화해 나가고자 합니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container card contact">
+          <h2>연락처</h2>
+		  <p>
+		  <span id="phone">Phone : </span>
+			<a>010-8308-7030</a>
+		  </p>
+		  <p>
+			<span id="Mail">Mail : </span>
+			<a class="mail" href="mailto:gugu0075@naver.com">gugu0075@naver.com</a>
+		  <p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Kang Taegu. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
